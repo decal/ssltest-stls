@@ -16,7 +16,7 @@ from optparse import OptionParser
 
 options = OptionParser(usage='%prog server [options]', description='Test for SSL heartbeat vulnerability (CVE-2014-0160))
 options.add_option('-p', '--port', type='int', default=443, help='TCP port to test (default: 443)')
-options.add_option('-s', '--starttls', type='string', default='', help='STARTTLS protocol: smtp, pop3, imap, ftp, or xmp')
+options.add_option('-s', '--starttls', type='string', default='', help='STARTTLS protocol: smtp, pop3, imap, ftp, or xmpp')
 
 def h2bin(x):
     return x.replace(' ', '').replace('\n', '').decode('hex')
